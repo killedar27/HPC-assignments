@@ -8,7 +8,7 @@ using std::vector;
 
 #define SHMEM_SIZE 256
 
-__global__ void prefixSum(int *v, int *v_r) {
+__global__ prefixSum void prefixSum(int *v, int *v_r) {
     // Allocate shared memory
     __shared__ int partial_sum[SHMEM_SIZE];
 
